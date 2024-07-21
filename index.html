@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Foodie</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="finder_form">
+      <input id="finder" type="text" placeholder="오늘의 식단" />
+      <input type="submit" value="음식 검색" id="searchBtn" />
+    </form>
+
+    <form id="selectForm">
+      <select id="select"></select>
+      <input
+        id="foodGram"
+        type="number"
+        placeholder="그램(g)"
+        min="100"
+        max="1000"
+        step="50"
+      />
+      <input type="submit" value="계산하기" id="gramBtn" />
+    </form>
+
+    <div id="infoBox">
+      <div id="foodName_box">
+        <h1 id="foodName"></h1>
+        <h1 id="foodName_gram"></h1>
+      </div>
+      <h2 id="calories"></h2>
+      <h2 id="carbo"></h2>
+      <h2 id="protein"></h2>
+      <h2 id="fat"></h2>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
